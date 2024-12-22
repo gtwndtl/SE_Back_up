@@ -1,5 +1,6 @@
 ## Install
--frontend
+-  frontend
+``` 	
  package ทั้งหมดมีดังนี้ :
  1.npm install axios
  2.npm install antd
@@ -10,3 +11,4 @@
  7.npm install html2canvas
  8.npm install @ant-design/pro-components @ant-design/pro-layout @ant-design/icons antd
  9.npm install @ant-design/pro-layout @ant-design/pro-card @ant-design/pro-table @ant-design/icons
+```

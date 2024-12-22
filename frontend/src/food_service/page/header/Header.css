@@ -1,0 +1,72 @@
+.menu-header {
+    position: relative;
+    width: 100%;
+    height: 34vw;
+    margin:  4vh 0;
+    border-radius: 8px;
+    /* margin: 32px auto; */
+
+    /* background: url("../../../assets/1409899-uhd_3840_2160_25fps.mp4") no-repeat; */
+    /* background-size: cover; */
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        background-color: #000000;
+        opacity: 0.4;
+    }
+
+    video {
+        border-radius: 8px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+ 
+}
+/* .menu-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000080;
+    border-radius: 8px;
+} */
+
+.menu-header-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 40%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 1.2s;
+    z-index: 2;
+
+    h2 {
+        color: white;
+        font-size: max(2.5vw, 22px);
+    }
+
+    p {
+        color: white;
+        font-size: 1vw;
+    }
+
+    button {
+        border: none;
+        padding: 1vw 2.3vw;
+        color: #545454;
+        background-color: white;
+        font-size: max(1vw, 13px);
+        border-radius: 50px;
+        cursor: pointer;
+    }
+}

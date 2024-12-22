@@ -1,0 +1,17 @@
+.content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    h1 {
+        margin: 30px 0;
+        font-size: max(1.6vw, 24px);
+    }
+}
+
+.menu-content {
+    display: flex;
+    gap: 30px;
+}
+

@@ -1,0 +1,222 @@
+
+.order-item-container {
+  margin: auto;
+  padding: 16px;
+
+  
+  .order-card {
+    display: flex;
+    gap: 16px;
+    background-color: #ffffff;
+
+  }
+}
+
+.order-item-container .order-item-detail {
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  header {
+    h1 {
+      font-size: max(1.5vw, 24px);
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.order-item-order-summary-content {
+  display: flex;
+  align-items: center;
+  overflow: auto;
+
+  .no-order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 52vw;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+
+    img {
+      width: auto;
+      height: 34vh;
+      opacity: 0.8;
+    }
+
+    .message {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      button {
+        font-weight: bold;
+        width: 100px;
+        height: 30px;
+        border: 3px solid var(--color-theme-main);
+        border-radius: 50px;
+        cursor: pointer;
+        color: var(--color-theme-main);
+        background-color: white;
+        transition: background-color 0.25s, color 0.25s, border-color 0.25s;
+      }
+    }
+
+    .message:hover {
+      cursor: pointer;
+
+      button {
+        border: 3px solid var(--color-theme-main);
+        color: white;
+        background-color: var(--color-theme-main);
+      }
+    }
+  }
+}
+
+.table-order-item {
+  width: 52vw;
+  max-width: 52vw;
+  tr {
+    th, td {
+      text-align: center;
+      padding: 12px;
+      font-size: max(1vw, 18px);
+      font-weight: bold;
+
+      img {
+        width: 6vw;
+        height: 5.2vw;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+
+      .order-item-menu-detail {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        max-width: 14vw;
+        h1 {
+          text-align: start;
+          font-size: max(1vw, 18px);
+          /* font-size: 18px; */
+        }
+        p {
+          display: -webkit-box;
+          -webkit-line-clamp: 2; /* จำนวนบรรทัดที่ต้องการแสดง */
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          text-align: start;
+          font-size: max(1vw, 12px);
+          /* font-size: 14px; */
+          color: #666;
+        }
+      }
+      .order-item-option {
+        align-self: center;
+        justify-self: start;
+        font-size: max(1vw, 12px);
+        padding: 0.46vw 1.4vw;
+        margin: 0.4vw;
+        /* border: 2px solid #666; */
+        border-radius: 50px;
+        background-color: #CBDCEB;
+        color: var(--color-theme-main);
+      }
+
+
+      .cancel-icon {
+        width: auto;
+        height: max(1.6vw, 30px);
+        transition: opacity 0.25s;
+      }
+      .cancel-icon:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.order-item-quantity-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%;
+  height: 100%; */
+  /* background-color: #ff0000; */
+  gap: 2px;
+  /* padding: 10px; */
+}
+
+.order-item-minus-button-disable {
+  width: max(1.6vw, 30px); /* ความกว้างอิงหน้าจอ */
+  height: max(1.6vw, 30px); /* ความกว้างอิงหน้าจอ */
+  font-size: max(1vw, 18px);
+  border-radius: 50%;
+  background-color: #d6d6d6;
+  color: white;
+  border: 3px solid #d6d6d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-item-minus-button, .order-item-plus-button {
+  width: max(1.6vw, 30px); /* ความกว้างอิงหน้าจอ */
+  height: max(1.6vw, 30px); /* ความกว้างอิงหน้าจอ */
+  font-size: max(1vw, 18px);
+  border-radius: 50%;
+  background-color: var(--color-theme-main);
+  color: white;
+  border: 3px solid var(--color-theme-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s, border-color 0.25s;
+}
+
+.order-item-minus-button:hover,
+.order-item-plus-button:hover {
+  background-color: #ffffff;
+  border: 3px solid var(--color-theme-main);
+  color: var(--color-theme-main);
+}
+
+input.order-item-quantity {
+  width: 2.5vw; /* กำหนดความกว้างให้พอเหมาะ */
+  height: 2.5vw; /* กำหนดความสูงให้พอเหมาะ */
+  margin: 0px; /* เพิ่มระยะห่างซ้ายและขวาของ input ให้มีระยะห่างเล็กน้อย */
+  font-size: max(1vw, 18px);
+  border: none;
+  /* background-color: #ffffff; */
+  text-align: center; /* จัดข้อความให้อยู่กึ่งกลาง */
+}
+
+@media only screen and (max-width: 1140px) {
+  .order-item-container {
+    width: 100%;
+    /* background-color: var(--color-theme-main); */
+    
+    .order-card {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+  
+  .order-item-order-summary-content {
+    width: 100%;
+  }
+
+  .table-order-item {
+    width: 100%;
+    max-width: 100%;
+  }
+}

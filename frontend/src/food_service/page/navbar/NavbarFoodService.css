@@ -1,0 +1,134 @@
+.food-service-container {
+    position: relative;
+}
+
+.navbar {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    height: 62px;
+    padding: 0 6vw;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 100;
+}
+
+header .cruise-ship-logo {
+    position: relative;
+    left: 10px;
+    width: auto;
+    height: 62px;
+    object-fit: cover;
+    /* width: 100%; */
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 16px; */
+}
+
+.user-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    gap: 12px;
+    height: 40px;
+    padding: 12px;
+    border-radius: 100px;
+    color: white;
+    background-color: var(--color-theme-main);
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 12px;
+    gap: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+
+    .search-icon {
+        color: var(--color-second);
+    }
+
+    input {
+        background-color: transparent;
+        border: none;
+        height: 100%;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    input:focus {
+        outline: none;
+    }
+}
+
+header .menu a {
+    color: #000;
+    text-decoration: none;
+    padding: 2px 12px;
+
+
+    .cart-container {
+        position: relative;
+
+        span {
+            position: absolute;
+            text-align: center;
+            font-weight: bold;
+            font-size: 12px;
+            width: 18px;
+            height: 18px;
+            top: -4px;
+            right: -6.5px;
+            border: 3px solid var(--color-red);
+            border-radius: 50%;
+            color: white;
+            background-color:  var(--color-red);
+
+        }
+    }
+}
+
+.menu-container {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 6vw;
+    margin: auto;
+    margin-bottom: 72px;
+    /* background-color: #4f2020; */
+    /* z-index: 10000; */
+
+    .back-to-menu {
+        position: fixed;
+        top: 78px;
+        left: 16px;
+        color: #000;
+        z-index: 10;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-container {
+        padding: 0 2vw;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .menu-container {
+        padding: 0 2vw;
+    }
+}
